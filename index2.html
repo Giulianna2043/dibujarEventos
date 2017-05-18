@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html amp lang="en">
 <head>
     <meta charset="UTF-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Rainforest</title>
+    <link rel="canonical" href="http://example.ampproject.org/article-metadata.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+   
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "Open-source framework for publishing content",
+        "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "logo.jpg"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  
+    
+    
     <title>Document</title>
     <link rel="stylesheet" href="main1.css">
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
 </head>
 <body>
     <header id="header">
+       <button on="tap:sidebar.toggle"class="ampstart-btn caps m2">☰ </button>  
+                <amp-sidebar id="sidebar"layout="nodisplay" side="right">
+                <amp-img class="amp-close-image"
+                    src="/img/ic_close_black_18dp_2x.png"
+                    width="20"
+                    height="20"
+                    alt="close sidebar"
+                    on="tap:sidebar.close"
+                    role="button"
+                    tabindex="0">
+                </amp-img>
+                <ul>
+                    <li><a href="/">Travel Styles</a></li>
+                    <li> Destinations</li>
+                    <li>
+                      <amp-fit-text width="220"
+                        height="20"
+                        layout="responsive"
+                        max-font-size="24">
+                        Nav item 2 - &lt;amp-fit-text&gt;
+                      </amp-fit-text>
+                    </li>
+                    <li> Nav item 5</li>
+                    <li> Nav item 6</li>
+                </ul>
+            </amp-sidebar>
+       
         <div id="topbar-nav">
             <div id="account-nav" style="">
-                <a href="/accounts/login/?next=/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/TSPJ4TC/">Login</a>
-                <a href="/accounts/register/">Register</a></div>
-                <a href="/contact-us/" data-bypass="">Help</a></div>
+                <a href="#">Login</a>
+                <a href="#">Register</a></div>
+                <a href="#" data-bypass="">Help</a></div>
                     <nav class="site-nav" id="site-nav">
                         <div id="masthead">
-                            <a href="/" class="home">G Adventures</a>
+                            <a href="#" class="home">G Adventures</a>
                             <div class="phone-hours">
                                 <div class="hours">Call us, we're open 24/7</div>
                                     <a class="telephone" href="callto:1 416 260 0999">1 416 260 0999</a>
@@ -30,18 +78,13 @@
                                     <li class="nav-link "><a href="/travel-deals/">Travel Deals</a></li>
                                     <li><div id="js-profile-bookings" class="nav-cart" style="display:none;">
                                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            <svg class="cart-icon" viewBox="0 0 24 24">
-                                                <path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1.003 1.003 0 0 0 20 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path></svg><span data-label="num-bookings" class="num-bookings"></span></a>
+                                            <span data-label="num-bookings" class="num-bookings"></span></a>
                                                     <div id="" class="dropdown-menu">
                                                         <h4 class="dropdown-menu-title">Resume Booking</h4>
                                                         <ul id="js-bookings-dropdown"></ul>
                                                     </div>
                                         </div>
-                                        <script type="text/template" id="profile-booking-item-tpl"><li class="booking-item" data-pbi="<%= booking.booking_id %>"><a href="/commerce/resume/<%= booking.booking_id %>"
-                                            class="booking-info"><span class="trip-name"><%= booking.trip_name %></span><span class="start-date"><%= booking.departure_msg %></span></a><a data-remove
-                                            href="#"
-                                            class="remove-booking"><svg><use xlink:href="/media-server/static/gadventures/svg/g-icons.svg#ic_clear_black_24px"></use></svg></a></li></script>
+                                        
                                     </li>
                                 </ul>
                                 <div class="bar">
@@ -66,7 +109,7 @@
                 <div id="aff"></div>
     </header>
     <div id="c-inner">
-        <div id="breadcrumbs">
+        <div id="submenu">
             <div class="breadcrumbs">
                 <a href="/">Home</a>
                 <a href="/search/">Adventure Tours</a>
@@ -88,24 +131,121 @@
             <div class="content container">
                 <section class="row-fluid" id="trip-nav-row">
                     <div class="span12" id="trip-nav-container">
-                        <ul id="trip-summary-nav" class="horizontal-list">
-                            <li class="active"><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/">Overview</a></li>
-                            <li class=""><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/itinerary/">Full itinerary</a></li>
-                            <li class=""><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/details/">Tour details</a></li>
+                        <ul id="trip-summary-nav" class="horizontal-list" style="display:inline-block">
+                            <li style="display:inline-block" class="active"><a href="#" style="text-decoration:none;"><b>Overview</b></a></li>
+                            <li class="" style="display:inline-block;padding:10px;list-style: none;"><a text-decoration:none;href="#">Full itinerary</a></li>
+                            <li class="" style="display:inline-block"><a style="text-decoration:none;"href="#">Tour details</a></li>
                         </ul>
                     </div>
-                </section>
-                <section class="row-fluid hidden-desktop" id="mobile-intro-container">
-                    <div class="mobile-intro">
-                        <p>Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!</p>
-                        <div class="addthis_container"><div class="addthis_jumbo_share" data-url="https://www.gadventures.com/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/TSPJ4TC/" data-title="G Lodge Amazon &amp; Camping - 4 Day Independent Adventure" data-description="Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!" style="clear: both;"><div id="atstbx2" class="at4-jumboshare at-style-responsive addthis-smartlayers addthis-animated at4-show" aria-labelledby="at-29ef8d6f-53bc-414d-9899-90bb03b4226e" role="region"><div class=""><div id="at-29ef8d6f-53bc-414d-9899-90bb03b4226e" class="at4-hide">AddThis Sharing</div><table><tr><td class="at4-count-container"><div class="at4-count" style="color: rgb(75, 46, 136);"><span class="at4-spacer">0</span><span style="font-size: 50px; line-height: 50px;">2</span></div><div class="at4-title" style="font-size: 18px; color: rgb(75, 46, 136);">shares</div></td><td class="at-resp-share-element at-share-btn-elements at4-share-container"><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-facebook" style="background-color: rgb(59, 89, 152); border-radius: 0%;"><span class="at4-visually-hidden">Share to Facebook</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-facebook" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Facebook</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-flipboard" style="background-color: rgb(225, 40, 40); border-radius: 0%;"><span class="at4-visually-hidden">Share to Flipboard</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-flipboard" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><g fill-rule="evenodd"></g><path d="M6 6h6.667v20H6z"></path><path opacity=".9" d="M12.667 6H26v6.667H12.667z"></path><path opacity=".7" d="M12.667 12.667h6.667v6.667h-6.667z"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Flipboard</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-twitter" style="background-color: rgb(29, 161, 242); border-radius: 0%;"><span class="at4-visually-hidden">Share to Twitter</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-twitter" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Twitter</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-pinterest_share" style="background-color: rgb(203, 32, 39); border-radius: 0%;"><span class="at4-visually-hidden">Share to Pinterest</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-pinterest_share" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Pinterest</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-compact" style="background-color: rgb(255, 101, 80); border-radius: 0%;"><span class="at4-visually-hidden">Share to More</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-addthis" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">More</span></a></td></tr></table></div></div></div></div></div><div id="mobile-price-box-container"><div class="trip-price-box"><div class="trip-pricing " data-departure="GPITSPJ4TC170520-O1"><div class="flag"></div><div class="duration-container"><h2><span class="duration">4 days </span></h2><h3><span class="start_finish"> Puerto Maldonado to Puerto Maldonado</span></h3></div><div class="trip-price"><div itemprop="price" class="price-block clearfix"><div class="price"><span class="from text-left">From</span><span itemprop="price"><span class="symbol USD">$</span><span class="price">799</span></span><span class="currency" itemprop="priceCurrency">USD</span></div><span class="note">Per person for 2 travellers</span></div><div class="trip_code">Trip Code: TSPJ4TC</div><div class="price-box-buttons clearfix"><div id="mobile-cta"><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/pricing/"><button class="btn transaction-btn  mobile-button "><i title="Calendar Icon" class="btn-icons icon-calander"></i>
+               
+                   
+                   <section>
+	<div class="container clearfix">
+		<div class="izquierda">
+			<p style="text-align">Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!</p>
+			<h1>2|</h1><br>shared
+		</div>
+		<div class="derecha">
+			<div class="block-form">
+				<form action="#">
+					            <h2><span class="duration">4 days </span></h2>
+                                   <h3><span class="start_finish"> Puerto Maldonado to Puerto Maldonado</span></h3>
+                                   
+                        <div class="trip-price">
+                                    <div itemprop="price" class="price-block clearfix">
+                                        <div class="price">
+                                            <span class="from text-left">From</span>
+                                            <span itemprop="price">
+                                            <span class="symbol USD">$</span>
+                                            <span class="price">799</span></span>
+                                            <span class="currency" itemprop="priceCurrency">USD</span>
+                                        </div>
+                                            <span class="note">Per person for 2 travellers</span>
+                                    </div>
+                                        <div class="trip_code">Trip Code: TSPJ4TC</div>
+                                        <div class="price-box-buttons clearfix">
+                                            <div id="mobile-cta">
+                                                <a href="#"><button class="btn transaction-btn  mobile-button "><i title="Calendar Icon" class="btn-icons icon-calander"></i>
                                 Book now
-                            </button></a></div><div id="wishlist-mobile"><button class="btn btn-wishlist wishlist-toggle  mobile-button" data-dossier-code="TSPJ4TC" data-original-title="" title=""><i class="btn-icons icon-wishlist"></i>Save to wish list</button></div></div></div></div></div></div></section><section class="row-fluid" id="trip-description-container"><div id="trip-description" class="span7"><p class="lead visible-desktop">
-                    Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!
+                            </button></a></div><div id="wishlist-mobile"><button class="btn btn-wishlist wishlist-toggle  mobile-button" data-dossier-code="TSPJ4TC" data-original-title="" title=""><i class="btn-icons icon-wishlist"></i>Save to wish list</button></div></div></div>
+                            </form><br><br>
+            </div>
+                                
+				
+			</div>
+		</div>
+</section>
+                    
+    </section>
+               
+        <section style="margin:20px;">
+            <div class="container clearfix">
+                <div class="izquierda">
+                    <div class="row-fluid"><div class="span12 trip-attributes-heading"><h2>Is this tour for me?</h2></div></div><div id="trip-attributes" class="row-fluid"><div id="trip-style" class="span6"><h3><span class="attribute-label">Travel Style: </span>Classic</h3><p>All of the highlights, culture, access, and I-can’t-believe-we-did-that moments, all at a great price.</p></div><div id="trip-physical" class="span6"><h3><span class="attribute-label">Physical Rating: </span>3 - Average
+                </h3><p>Some tours may include light hiking, biking, rafting, or kayaking in addition to walking.</p></div>
+                </div>
+                </div>
+                <div class="derecha" style=""  style="padding-top: 30px;">
+                    <div class="">
+                    
+                        <form action="#" style="padding:30px;">
+                            <div id="trip-service" class="span6"><h3><span class="attribute-label">Service Level: </span>Standard</h3><p>Comfortable tourist-class accommodations with character; mix of public and private transport.</p></div>
+                            <div id="trip-type" class="span6"><h3><span class="attribute-label">Trip Type: </span>Independent Travel</h3><p>Independent trips are either entire trips you take privately or solo extensions to a group tour. Local staff are available on standby 24/7.</p></div>
+                        </form>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section>
+	<div class="container clearfix">
+		<div class="izquierda">
+			<section>
+	<div class="container clearfix">
+		<div class="izquierda">
+			<div class="itineraries"><h2>Itinerary</h2><div class="itinerary"><div id="day-1" class="day "><h3><span class="day-number">Day 1</span><span class="location">Puerto Maldonado/Tambopata</span></h3><div class="summary"><p>Arrive at the Puerto Maldonado airport and meet the naturalist guide to journey to the jungle lodge. Spot wildlife en route. Before dinner, head out for a night walk around the lodge.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Lunch | Dinner
+            </div></div><div id="day-2" class="day "><h3><span class="day-number">Day 2</span><span class="location">Tambopata</span></h3><div class="summary"><p>Enjoy guided excursions led by expert naturalists to spot wildlife at nearby oxbow lakes and along jungle trails. Head upriver for an unforgettable camping experience.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Breakfast | Lunch | Dinner
+            </div></div><div id="day-3" class="day "><h3><span class="day-number">Day 3</span><span class="location">Tambopata</span></h3><div class="summary"><p>Rise early to get in place at the clay lick before the birds arrive. Witness the sights and sounds of the macaws and parrots feeding on the minerals and salts of the clay. Head back to the lodge after breakfast for a free afternoon. Spot caimans on the shore after dinner.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Breakfast | Lunch | Dinner
+            </div></div><div id="day-4" class="day "><h3><span class="day-number">Day 4</span><span class="location">Tambopata/Puerto Maldonado</span></h3><div class="summary"><p>After breakfast, return by canoe to Puerto Maldonado and transfer to the airport for departure.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Breakfast
+            </div></div></div></div>
+            
+            <button><a class="btn site-btn" href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/itinerary/">View full itinerary </a></button>
+		</div>
+		<div class="derecha">
+			<div class="">
+				<img src="https://media.gadventures.com/media-server/cache/29/97/299720d0df40179d4119a39ad504ca6e.png" width="100%" height="100% " alt="">
+				<h3>Places visited</h3><ul class="horizontal-list places-visited"><li>Amazon</li><li><a href="/destinations/south-america/peru/?ref=trip">Peru</a></li></ul>
+				
+			</div>
+		</div>
+	</div>
+</section><section>
+	<div class="container clearfix">
+		<div class="izquierda">
+			<div class="span6"><h2>What's Included</h2><ul><li>Arrival and departure transfers</li><li> Exclusive G Lodge Amazon stay (2 nts)</li><li> Camping in the rainforest (1 nt)</li><li> Wildlife-spotting excursions by foot and by boat</li><li> Rubber boot use</li><li> All transport between destinations and to/from included activities</li></ul></div>
+		</div>
+		<div class="derecha">
+			<div class="block-form">
+				<h3></h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+	
+                
+                
+                
+                
+                
+                
+                
+<!--<section class="row-fluid" id="trip-description-container"><div id="trip-description" class="span7"><p class="lead visible-desktop">
+                    
                 </p><div class="row-fluid"><div class="span12 trip-attributes-heading"><h2>Is this tour for me?</h2></div></div><div id="trip-attributes" class="row-fluid"><div id="trip-style" class="span6"><h3><span class="attribute-label">Travel Style: </span>Classic</h3><p>All of the highlights, culture, access, and I-can’t-believe-we-did-that moments, all at a great price.</p></div><div id="trip-service" class="span6"><h3><span class="attribute-label">Service Level: </span>Standard</h3><p>Comfortable tourist-class accommodations with character; mix of public and private transport.</p></div><div id="trip-physical" class="span6"><h3><span class="attribute-label">Physical Rating: </span>3 - Average
                 </h3><p>Some tours may include light hiking, biking, rafting, or kayaking in addition to walking.</p></div><div id="trip-type" class="span6"><h3><span class="attribute-label">Trip Type: </span>Independent Travel</h3><p>Independent trips are either entire trips you take privately or solo extensions to a group tour. Local staff are available on standby 24/7.</p></div></div></div><div id="trip-price-box-column" class="span4 visible-desktop offset1"><div id="trip-price-box-container"><div class="trip-price-box"><div class="trip-pricing " data-departure="GPITSPJ4TC170520-O1"><div class="flag"></div><div class="duration-container"><h2><span class="duration">4 days </span></h2><h3><span class="start_finish"> Puerto Maldonado to Puerto Maldonado</span></h3></div><div class="trip-price"><div itemprop="price" class="price-block clearfix"><div class="price"><span class="from text-left">From</span><span itemprop="price"><span class="symbol USD">$</span><span class="price">799</span></span><span class="currency" itemprop="priceCurrency">USD</span></div><span class="note">Per person for 2 travellers</span></div><div class="trip_code">Trip Code: TSPJ4TC</div><div class="price-box-buttons clearfix"><div id="desktop-cta"><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/pricing/"><button class="btn transaction-btn   btn-small desktop-button "><i title="Calendar Icon" class="btn-icons icon-calander"></i>
                                 Book now
-                            </button></a></div><div id="wishlist-main"><button class="btn btn-wishlist wishlist-toggle   btn-small desktop-button" data-dossier-code="TSPJ4TC" data-original-title="" title=""><i class="btn-icons icon-wishlist"></i>Save to wish list</button></div></div></div></div></div><div class="addthis_container"><div class="addthis_jumbo_share" data-url="https://www.gadventures.com/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/TSPJ4TC/" data-title="G Lodge Amazon &amp; Camping - 4 Day Independent Adventure" data-description="Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!" style="clear: both;"><div id="atstbx3" class="at4-jumboshare at-style-responsive addthis-smartlayers addthis-animated at4-show" aria-labelledby="at-510c2d6c-ab1c-4a64-8c69-22c140be3a6b" role="region"><div class=""><div id="at-510c2d6c-ab1c-4a64-8c69-22c140be3a6b" class="at4-hide">AddThis Sharing</div><table><tr><td class="at4-count-container"><div class="at4-count" style="color: rgb(75, 46, 136);"><span class="at4-spacer">0</span><span style="font-size: 50px; line-height: 50px;">2</span></div><div class="at4-title" style="font-size: 18px; color: rgb(75, 46, 136);">shares</div></td><td class="at-resp-share-element at-share-btn-elements at4-share-container"><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-facebook" style="background-color: rgb(59, 89, 152); border-radius: 0%;"><span class="at4-visually-hidden">Share to Facebook</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-facebook" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Facebook</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-flipboard" style="background-color: rgb(225, 40, 40); border-radius: 0%;"><span class="at4-visually-hidden">Share to Flipboard</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-flipboard" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><g fill-rule="evenodd"></g><path d="M6 6h6.667v20H6z"></path><path opacity=".9" d="M12.667 6H26v6.667H12.667z"></path><path opacity=".7" d="M12.667 12.667h6.667v6.667h-6.667z"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Flipboard</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-twitter" style="background-color: rgb(29, 161, 242); border-radius: 0%;"><span class="at4-visually-hidden">Share to Twitter</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-twitter" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Twitter</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-pinterest_share" style="background-color: rgb(203, 32, 39); border-radius: 0%;"><span class="at4-visually-hidden">Share to Pinterest</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-pinterest_share" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Pinterest</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-compact" style="background-color: rgb(255, 101, 80); border-radius: 0%;"><span class="at4-visually-hidden">Share to More</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-addthis" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">More</span></a></td></tr></table></div></div></div></div></div></div></section>
+                            </button></a></div><div id="wishlist-main"><button class="btn btn-wishlist wishlist-toggle   btn-small desktop-button" data-dossier-code="TSPJ4TC" data-original-title="" title=""><i class="btn-icons icon-wishlist"></i>Save to wish list</button></div></div></div></div></div><div class="addthis_container"><div class="addthis_jumbo_share" data-url="https://www.gadventures.com/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/TSPJ4TC/" data-title="G Lodge Amazon &amp; Camping - 4 Day Independent Adventure" data-description="Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!" style="clear: both;"><div id="atstbx3" class="at4-jumboshare at-style-responsive addthis-smartlayers addthis-animated at4-show" aria-labelledby="at-510c2d6c-ab1c-4a64-8c69-22c140be3a6b" role="region"><div class=""><div id="at-510c2d6c-ab1c-4a64-8c69-22c140be3a6b" class="at4-hide">AddThis Sharing</div><table><tr><td class="at4-count-container"><div class="at4-count" style="color: rgb(75, 46, 136);"><span class="at4-spacer">0</span><span style="font-size: 50px; line-height: 50px;">2</span></div><div class="at4-title" style="font-size: 18px; color: rgb(75, 46, 136);">shares</div></td><td class="at-resp-share-element at-share-btn-elements at4-share-container"><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-facebook" style="background-color: rgb(59, 89, 152); border-radius: 0%;"><span class="at4-visually-hidden">Share to Facebook</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-facebook" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M22 5.16c-.406-.054-1.806-.16-3.43-.16-3.4 0-5.733 1.825-5.733 5.17v2.882H9v3.913h3.837V27h4.604V16.965h3.823l.587-3.913h-4.41v-2.5c0-1.123.347-1.903 2.198-1.903H22V5.16z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Facebook</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-flipboard" style="background-color: rgb(225, 40, 40); border-radius: 0%;"><span class="at4-visually-hidden">Share to Flipboard</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-flipboard" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><g fill-rule="evenodd"></g><path d="M6 6h6.667v20H6z"></path><path opacity=".9" d="M12.667 6H26v6.667H12.667z"></path><path opacity=".7" d="M12.667 12.667h6.667v6.667h-6.667z"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Flipboard</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-twitter" style="background-color: rgb(29, 161, 242); border-radius: 0%;"><span class="at4-visually-hidden">Share to Twitter</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-twitter" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M27.996 10.116c-.81.36-1.68.602-2.592.71a4.526 4.526 0 0 0 1.984-2.496 9.037 9.037 0 0 1-2.866 1.095 4.513 4.513 0 0 0-7.69 4.116 12.81 12.81 0 0 1-9.3-4.715 4.49 4.49 0 0 0-.612 2.27 4.51 4.51 0 0 0 2.008 3.755 4.495 4.495 0 0 1-2.044-.564v.057a4.515 4.515 0 0 0 3.62 4.425 4.52 4.52 0 0 1-2.04.077 4.517 4.517 0 0 0 4.217 3.134 9.055 9.055 0 0 1-5.604 1.93A9.18 9.18 0 0 1 6 23.85a12.773 12.773 0 0 0 6.918 2.027c8.3 0 12.84-6.876 12.84-12.84 0-.195-.005-.39-.014-.583a9.172 9.172 0 0 0 2.252-2.336" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Twitter</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-pinterest_share" style="background-color: rgb(203, 32, 39); border-radius: 0%;"><span class="at4-visually-hidden">Share to Pinterest</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-pinterest_share" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M7 13.252c0 1.81.772 4.45 2.895 5.045.074.014.178.04.252.04.49 0 .772-1.27.772-1.63 0-.428-1.174-1.34-1.174-3.123 0-3.705 3.028-6.33 6.947-6.33 3.37 0 5.863 1.782 5.863 5.058 0 2.446-1.054 7.035-4.468 7.035-1.232 0-2.286-.83-2.286-2.018 0-1.742 1.307-3.43 1.307-5.225 0-1.092-.67-1.977-1.916-1.977-1.692 0-2.732 1.77-2.732 3.165 0 .774.104 1.63.476 2.336-.683 2.736-2.08 6.814-2.08 9.633 0 .87.135 1.728.224 2.6l.134.137.207-.07c2.494-3.178 2.405-3.8 3.533-7.96.61 1.077 2.182 1.658 3.43 1.658 5.254 0 7.614-4.77 7.614-9.067C26 7.987 21.755 5 17.094 5 12.017 5 7 8.15 7 13.252z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">Pinterest</span></a><a role="button" tabindex="1" class="at-icon-wrapper at-share-btn at-svc-compact" style="background-color: rgb(255, 101, 80); border-radius: 0%;"><span class="at4-visually-hidden">Share to More</span><span class="at-icon-wrapper" style="line-height: 32px; height: 32px; width: 32px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 32" class="at-icon at-icon-addthis" style="fill: rgb(255, 255, 255); width: 32px; height: 32px;"><g><path d="M18 14V8h-4v6H8v4h6v6h4v-6h6v-4h-6z" fill-rule="evenodd"></path></g></svg></span><span class="at-label" style="font-size: 11.4px; line-height: 32px; height: 32px; color: rgb(255, 255, 255);">More</span></a></td></tr></table></div></div></div></div></div></div></section>-->
 
         </div>
         
