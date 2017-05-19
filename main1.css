@@ -77,11 +77,15 @@ nav.site-nav .primary li.current{background:transparent url('https://media.gadve
 
 h2{text-align:inherit}
 
-
+.clearfix:after
+{
+    content:" ";
+    clear:both;
+}
 
 .container
 {
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto;
 }
 
@@ -95,6 +99,7 @@ h2{text-align:inherit}
 .izquierda
 {
 	width: 60%;
+    clear: both;
     
 }
 .izquierda h1{
@@ -103,11 +108,12 @@ h2{text-align:inherit}
     
 }
 span{
-    color: blue;
+    color: #4c4f56;
 }
 .derecha
 {
 	width: 40%;
+    
 }
 
 
@@ -124,6 +130,23 @@ span{
 	width: 100%;
 	box-sizing: border-box;
 }
+
+
+#departure-list-container #departures-list .departures-list-headings div {
+    box-sizing: border-box;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+.btn-morado{
+    transition: background-color 500ms ease-out;
+    background-color: #47268d;
+    color: white;
+    padding: 10px;
+}
+
+
+f
 
 
 

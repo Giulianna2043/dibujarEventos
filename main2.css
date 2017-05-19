@@ -1,0 +1,28 @@
+#container{
+    width: 1000px;
+    margin: 200px;
+}
+
+
+
+#trip-nav-row{
+    width: 1170px;
+    display:flex;
+}
+#nuevo{
+    display: flex;
+}
+.derecha
+{
+	width: 40%;
+    clear: both;
+display: flex}
+.izquierda
+{
+	width: 60%;
+    clear: both;}
+@media (min-width: 1200px)
+.container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 1170px;
+    display:
+}
