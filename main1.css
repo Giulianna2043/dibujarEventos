@@ -74,6 +74,13 @@ nav.site-nav #masthead {
 
 
 nav.site-nav .primary li.current{background:transparent url('https://media.gadventures.com/media-server/static/gadventures/images/current.png?5f57387854e7') no-repeat top center}nav.site-nav .primary li.current a{font-weight:500;position:relative}nav.site-nav .primary li.current a:hover{text-decoration:none;background:transparent;opacity:1}nav.site-nav .primary .hypersearchform{float:right;opacity:1;transition:opacity .3s ease-in-out}nav.site-nav .primary .g-flag{transition:opacity .3s ease-in-out,width .5s ease-in-out,margin-right .5s ease-in-out;width:0;height:40px;opacity:0;float:left;margin-right:0;margin-top:7px;background:url('https://media.gadventures.com/media-server/static/gadventures/css/images/navigation-sprite-2015.png?d9de56a2bf68') no-repeat 0 -57px;background-size:250px 400px}nav.site-nav .mobile-nav{display:none;padding:10px 0 4px 0;text-align:center;background:#47268d}@media(max-width:768px){nav.site-nav .mobile-nav{display:block}}nav.site-nav .mobile-nav .mobile-icon span{display:inline-block;height:20px;overflow:hidden;width:20px}nav.site-nav .mobile-nav .mobile-icon span:focus{outline:none}nav.site-nav .mobile-nav .btn-group{font-size:1em}nav.site-nav .mobile-nav .g-logo-mini{background:transparent url('https://media.gadventures.com/media-server/static/gadventures/css/images/mobile-nav-icons.svg?af855fb524f0') no-repeat -100px 0}nav.site-nav .mobile-nav .menu-icon{background:transparent url('https://media.gadventures.com/media-server/static/gadventures/css/images/mobile-nav-icons.svg?af855fb524f0') no-repeat -80px 0;margin-left:20px}nav.site-nav .mobile-nav .cog-icon{background:transparent url('https://media.gadventures.com/media-server/static/gadventures/css/images/mobile-nav-icons.svg?af855fb524f0') no-repeat -60px 0;margin-right:20px}nav.site-nav .mobile-nav .search-icon{background:transparent url('https://media.gadventures.com/media-server/static/gadventures/css/images/mobile-nav-icons.svg?af855fb524f0') no-repeat -20px 0;margin-right:20px}nav.site-nav .mobile-nav .filter-icon{background:transparent url('https://media.gadventures.com/media-server/static/gadventures/css/images/mobile-nav-icons.svg?af855fb524f0') no-repeat -20px 0;margin-right:20px}nav.site-nav .mobile-nav #search-toggle{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;background:#47268d;display:block;float:left;padding:0 10px;position:absolute;top:53px;width:100%;z-index:1000}nav.site-nav .mobile-nav #search-toggle form{margin:2px 0 5px 0;width:100%}nav.site-nav .secondary-nav{width:100%;overflow:hidden;position:relative;z-index:2}nav.site-nav .sticky{position:fixed;top:0;width:100%;z-index:99;transition:opacity .3s ease-in-out,top .5s ease-in-out}nav.site-nav .sticky a.telephone{opacity:1;transition:opacity .3s ease-in-out;margin-right:30px}nav.site-nav .sticky a.telephone:hover{text-decoration:none;cursor:default}nav.site-nav .sticky .primary .g-flag{transition:opacity .3s ease-in-out,width .5s ease-in-out,margin-right .5s ease-in-out;opacity:1;margin-right:15px;width:40px}nav.site-nav .sticky .primary .bar{margin-left:340px;transition:margin-left .5s ease-in-out}nav.site-nav .sticky .primary .bar .hypersearchform{opacity:1;transition:opacity .3s ease-in-out}nav.site-nav .sticky .primary .bar .hypersearchform .btn{margin-left:5px;padding:0 10px}nav.site-nav .sticky.animate-hide{transition:opacity .3s ease-in-out,top .5s ease-in-out;top:-100px;opacity:0}nav.site-nav .secondary{background:rgba(255,255,255,0.85);margin-top:0}@media(max-width:768px){nav.site-nav .secondary{display:none}}nav.site-nav .travel-styles-nav,nav.site-nav .destinations-nav{width:100%;float:none;margin-top:0}nav.site-nav .travel-styles-nav li,nav.site-nav .destinations-nav li{display:table;float:left;height:40px;margin:0;line-height:20px}nav.site-nav .travel-styles-nav li:first-child,nav.site-nav .destinations-nav li:first-child{padding-left:34px}nav.site-nav .travel-styles-nav li a,nav.site-nav .destinations-nav li a{display:table-cell;vertical-align:middle;height:100%;padding:0 20px 0 0;font-size:14px;color:#333;position:relative;opacity:.7}nav.site-nav .travel-styles-nav li a:hover,nav.site-nav .destinations-nav li a:hover{background-color:none;opacity:1}@media(max-width:1030px){nav.site-nav .travel-styles-nav li a,nav.site-nav .destinations-nav li a{padding-right:15px;font-size:13px}}@media(max-width:900px){nav.site-nav .travel-styles-nav li a,nav.site-nav .destinations-nav li a{padding-right:10px;font-size:12px}}nav.site-nav .travel-styles-nav li:hover,nav.site-nav .destinations-nav li:hover{background-color:none}nav.site-nav .travel-styles-nav li.current a,nav.site-nav .destinations-nav li.current a{font-weight:bold;opacity:1}@media(max-width:920px){nav.site-nav .travel-styles-nav,nav.site-nav .destinations-nav{min-width:920px}}nav.site-nav li.item-classic a{background-position:0 0}nav.site-nav li.item-comfort a{background-position:0 -40px}nav.site-nav li.item-active a{background-position:0 -80px}nav.site-nav li.item-yolo a{background-position:0 -120px}nav.site-nav li.item-marine a{background-position:0 -160px}nav.site-nav li.item-family a{background-position:0 -200px}nav.site-nav li.item-local-living a{background-position:0 -240px}nav.site-nav li.item-private-groups a{background-position:0 -280px}nav.site-nav li.item-rail a{background-position:0 -320px}@media(max-width:1100px){nav.site-nav .travel-styles-nav li a{width:70px;height:35px}nav.site-nav .travel-styles-nav li.item-classic a{background-position:0 0}nav.site-nav .travel-styles-nav li.item-comfort a{background-position:0 -34px}nav.site-nav .travel-styles-nav li.item-active a{background-position:0 -68px}nav.site-nav .travel-styles-nav li.item-yolo a{background-position:0 -104px}nav.site-nav .travel-styles-nav li.item-marine a{background-position:0 -140px}nav.site-nav .travel-styles-nav li.item-family a{background-position:0 -175px}nav.site-nav .travel-styles-nav li.item-local-living a{background-position:0 -210px}nav.site-nav .travel-styles-nav li.item-private-groups a{background-position:0 -245px}nav.site-nav .travel-styles-nav li.item-rail a{background-position:0 -280px}}.content-top .sectionnavigation,.section-navigation .sectionnavigation,.subsection-navigation .sectionnavigation{background:rgba(125,125,125,0.7);padding:5px 25px}.content-top .sectionnavigation a,.section-navigation .sectionnavigation a,.subsection-navigation .sectionnavigation a{padding:10px;color:white;opacity:1}.content-top .sectionnavigation a:hover,.section-navigation .sectionnavigation a:hover,.subsection-navigation .sectionnavigation a:hover{opacity:.7;text-decoration:none}.content-top .sectionnavigation h4,.section-navigation .sectionnavigation h4,.subsection-navigation .sectionnavigation h4{display:inline-block;font-size:13px;letter-spacing:.03em;padding:0;margin:0;font-weight:normal}.content-top .sectionnavigation h4.current a,.section-navigation .sectionnavigation h4.current a,.subsection-navigation .sectionnavigation h4.current a{color:white;font-weight:bold;opacity:1}.content-top .sectionnavigation ul,.section-navigation .sectionnavigation ul,.subsection-navigation .sectionnavigation ul{margin:0;padding:0;display:inline-block}.content-top .sectionnavigation ul li,.section-navigation .sectionnavigation ul li,.subsection-navigation .sectionnavigation ul li{font-size:.9em;letter-spacing:.03em;display:inline-block;list-style:none;padding:0;margin:0}.content-top .sectionnavigation ul li.current a,.section-navigation .sectionnavigation ul li.current a,.subsection-navigation .sectionnavigation ul li.current a{color:#333;font-weight:bold;opacity:1}@media(max-width:990px){.content-top h4,.section-navigation h4,.subsection-navigation h4{font-size:12px}.content-top ul li.current a,.content-top ul li a,.section-navigation ul li.current a,.section-navigation ul li a,.subsection-navigation ul li.current a,.subsection-navigation ul li a{font-size:12px}}.btn:link.btn-second{background:transparent;border:2px solid white;border-radius:5px}.btn:link.btn-second:hover{background-color:#333}.nav-cart{position:relative;height:52px}.nav-cart a{padding:15px 10px 15px 10px}.nav-cart a:hover,.nav-cart a:focus{text-decoration:none;opacity:.7}.nav-cart a .cart-icon{margin-top:18px;fill:#fff;height:20px}.nav-cart .dropdown-menu-title{font-size:15px;font-weight:bold;text-align:center;margin:0;padding:15px 0}.nav-cart .num-bookings{font-weight:bold;font-size:12px;color:#fff}.nav-cart .num-bookings:hover{text-decoration:none}.nav-cart .dropdown-menu{width:320px;float:none;left:0;right:auto;padding:0;overflow-x:hidden}.nav-cart .dropdown-menu ul{max-height:340px;overflow-y:scroll;font-size:12px;box-shadow:0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);border:none;margin:0;padding:0;width:320px}.nav-cart .dropdown-menu ul li.booking-item{margin:0;list-style:none;position:relative;display:block;padding:5px 0}.nav-cart .dropdown-menu ul li.booking-item a{font-size:14px;padding:5px 25px;display:block}.nav-cart .dropdown-menu ul li.booking-item a:hover,.nav-cart .dropdown-menu ul li.booking-item a:focus{background:none;color:#4c4f56}.nav-cart .dropdown-menu ul li.booking-item:hover{background-color:#f5f5f5}.nav-cart .dropdown-menu ul li.booking-item.dropdown-menu-title-li:hover{background:none}.nav-cart .dropdown-menu ul li.booking-item>a.booking-info{padding-right:35px}.nav-cart .dropdown-menu ul li.booking-item>a.booking-info .trip-name{color:#039CDA;font-size:14px;font-weight:bold;display:block;overflow-x:hidden;line-height:18px}.nav-cart .dropdown-menu ul li.booking-item>a.booking-info .start-date{color:#777;font-size:12px;line-height:16px;display:block}.nav-cart .dropdown-menu ul li.booking-item>a.remove-booking{display:none;position:absolute;right:11px;top:20px;padding:0;line-height:20px}.nav-cart .dropdown-menu ul li.booking-item>a.remove-booking svg{fill:#999;width:20px;height:20px}.nav-cart .dropdown-menu ul li.booking-item>a.remove-booking:hover svg{fill:#4c4f56}.nav-cart .dropdown-menu ul li.booking-item:hover a.remove-booking{display:block}
+.title-block{
+    width: 50%;
+    color: white;
+    background: rgba(60, 52, 52, 0);position: absolute;    top: 430px;
+    left: 243px;
+    vertical-align: middle;
+}
 
 h2{text-align:inherit}
 
@@ -89,19 +96,9 @@ h2{text-align:inherit}
 	margin: 0 auto;
 }
 
-.izquierda , .derecha 
-{
-	float: left;
-	box-sizing: border-box;
-	padding: 10px;
-}
 
-.izquierda
-{
-	width: 60%;
-    clear: both;
-    
-}
+
+
 .izquierda h1{
     font-family: laton;
     font-size: 50px;
@@ -110,11 +107,7 @@ h2{text-align:inherit}
 span{
     color: #4c4f56;
 }
-.derecha
-{
-	width: 40%;
-    
-}
+
 
 
 .block-form
@@ -124,6 +117,7 @@ span{
 	border-radius: 15px;
 	padding: 15px;
 	text-align: center;
+    
 }
 .block-form input, .block-form button
 {
@@ -145,9 +139,10 @@ span{
     padding: 10px;
 }
 
-
-f
-
+.enlace-azul
+{
+    color: #039CDA;
+}
 
 
 
