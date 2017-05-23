@@ -1,0 +1,89 @@
+.header{
+    background: #47268d;
+}
+.ampstart-navbar-trigger {
+    line-height: 3.5rem;
+    font-size: 2rem;
+    
+    color: white;
+   
+    padding:;
+    text-align: center;
+    display: inline-block;
+   
+    visibility: hidden;
+    
+}
+.ampstart-nav-dropdown .ampstart-dropdown-item, .ampstart-nav-dropdown .ampstart-dropdown>section>header  {
+    background-color: #1c1414;
+    color: red;
+}
+
+
+
+.ampstart-dropdown>section>header:after {
+    display: inline-block;
+    content: ">";
+    padding: 0 0 0 1.5rem;
+    color: red;
+    
+    
+    
+}
+.flex{
+    display: flex;
+}
+.top-search-toggle .m-search{
+    position: absolute;
+    left: 76%;
+    top: 13%;
+    margin-right: 1%;
+    
+}
+ .top-search-toggle input {
+    width: 200px;
+    font-size: 14px;
+    padding: 1px 10px;
+    
+}
+
+
+
+/*********************************************************************/
+@media (max-width: 425px)  and (min-width: 320px) {
+    .ampstart-navbar-trigger
+    {
+       visibility: visible;
+      padding:1% 10%;
+    }
+    .menu-oculto{
+        display: none;
+    }
+    .top-search-toggle .m-search{
+        display: none;
+    }
+}
+
+@media (max-width: 768px)  and (min-width: 425px) {
+    .ampstart-navbar-trigger
+    {
+       visibility: visible;
+      padding:2% 13%;
+    }
+     .menu-oculto{
+        display: none;
+    }
+    .top-search-toggle .m-search{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 1440px)  and (min-width: 1220px) {
+    .header
+    {
+       height: 58px;
+    }
+     .menu-oculto{
+        padding-left: 10%;
+    }
+}

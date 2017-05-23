@@ -1,0 +1,28 @@
+.ampstart-sidebar {
+   background-color: #fff;
+   color: #000;
+    min-width: 300px;
+   width: 300px;
+}
+.flex{
+    display: flex;
+}
+@media (max-width: 64rem) and (min-width: 52.06rem){
+   .md-hide {
+    display: none;
+} 
+}
+
+@media (max-width: 64rem) and (min-width: 52.06rem){
+  .md-hide {
+    display: none;
+}  
+}
+
+.pr2 {
+    padding-right: 1rem;
+}
+.ampstart-nav-item a{
+    list-style: none;
+    color: red;
+}

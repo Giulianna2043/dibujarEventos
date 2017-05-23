@@ -24,13 +24,98 @@
     
     
     <title>Document</title>
-    <link rel="stylesheet" href="main1.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <link rel="stylesheet" href="css/main1.css">
+    <link rel="stylesheet" href="css/main.css">
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <link rel="canonical" href="https://ampbyexample.com/components/amp-social-share/">
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 </head>
 <body>
-    <header id="header">
+  
+  
+  
+    <!-- Start Navbar -->
+  <header class=" header">
+
+        <div>
+            <div>
+                <ul class="lista flex" >
+                    <li role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2">☰</li>
+                    <li style="padding-top: 1%;"><a class="menu-oculto" style="list-style:none;"href="#">Travel Styles</a></li>
+                    <li role="button"  tabindex="0" class="ampstart-navbar-trigger  pr2">☰</li>
+                    <li style="padding-top: 1%;"><a class="menu-oculto" href="#" style="list-style:none;">Destinations</a></li>
+                    <li role="button" tabindex="0" class="ampstart-navbar-trigger  pr2"><span  style="padding:1%;color:white;font-size:26px;"class="icon icon-search"></span></li>
+                    <li style="padding-top: 1%;" on="tap:header-sidebar.toggle"><a class="menu-oculto" href="#">Travel Deals</a></li>
+                         <div role="search" class="top-search"  on="tap:header-sidebar.toggle">
+                              <div class="top-search-toggle">
+                                <form method='get' action="/search/" class='m-search'>
+                                  <input aria-label="Where to next?" title="Site-wide search" type="text" name="q" placeholder="Where to next adventure ?" />
+                                  <input type="hidden" name="ref" value="mobsearch"/>
+                                  <button style="background:#8ab93f;" ><span  style="padding:1%;color:white;font-size:14px;"class="icon icon-search"></span></button>
+                                </form>
+                              </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+  </header>
+
+<!-- Start Sidebar -->
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 " layout="nodisplay">
+    <div class="flex justify-start items-center ampstart-sidebar-header">
+        <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+    </div>
+    <nav class="ampstart-sidebar-nav ampstart-nav">
+        <ul class="list-reset m0 p0 caps h5 ampstart-nav-item ampstart-nav-dropdown relative">
+            <li class="ampstart-nav-item  flex ampstart-nav-dropdown relative">
+                    <!-- Start Dropdown-inline -->
+                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                    <section>
+                        <header>Destinations  </header>
+                        <ul class="ampstart-dropdown-items list-reset m0 p0" style="list-style:none;">
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Africa</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Polar regions</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Asia</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Australia /New Zealand</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Central America</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Europa</a></li>
+                           <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">North America </a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">South America</a></li>
+                        </ul>
+                    </section>
+                </amp-accordion>
+                    <!-- End Dropdown-inline -->
+            </li>
+            <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                    <section>
+                        <header>Travel Styles  </header>
+                        <ul class="ampstart-dropdown-items list-reset m0 p0">
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Active</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Classic</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">National Geographic Journeys</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Family</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Local Living</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Marine</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Yolo </a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Rail</a></li>
+                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Private Groups</a></li>
+                        </ul>
+                    </section>
+                </amp-accordion>  
+            </li>
+            <li class="ampstart-nav-item"><a  style="list-style:none;" href="#">why Travelk With G ></a></li>
+            <li class="ampstart-nav-item"><a   href="#">Newsletter ></a></li>
+            <li class="ampstart-nav-item"><a  href="#">Request aBrochure ></a></li>
+        </ul>
+    </nav>
+  
+</amp-sidebar>
+<!-- End Sidebar -->
+  <!-- End Navbar -->
+
+   <!-- <header id="header">
        <button on="tap:sidebar.toggle"class="ampstart-btn caps m2">☰ </button>  
                 <amp-sidebar id="sidebar"layout="nodisplay" side="right">
                 <amp-img class="amp-close-image"
@@ -110,9 +195,10 @@
                     </nav>
 
                 <div id="aff"></div>
-    </header>
+    </header>-->
+    
 <!--------------------------------Located on the Tambopata River .------------------------------------------------- --> 
-<div id="c-inner">
+        <!--<div id="c-inner">
     <div id="submenu">
         <div class="breadcrumbs">
             <a href="/">Home</a>
@@ -132,257 +218,12 @@
                     <span class="icon"></span>
                     <span class="icon"></span>
         </div>
-        <div class="content container">
-            <section class="row-fluid" id="trip-nav-row">
-                <div class="span12" id="trip-nav-container">
-                    <ul id="trip-summary-nav" class="horizontal-list" style="display:inline-block">
-                        <li style="display:inline-block" class="active"><a href="#" style=";"><b>Overview</b></a></li>
-                        <li class="" style="display:inline-block;padding:10px;list-style: none;"><a text-decoration:none;href="#">Full itinerary</a></li>
-                        <li class="" style="display:inline-block"><a style="text-decoration:none;"href="#">Tour details</a></li>
-                    </ul>
-                </div>
-            </section>
-        </div>
     </div>
-</div>
+</div>-->
                
-<!--------------------------------Located on the Tambopata River .------------------------------------------------- -->                     
-<section>
-	<div class="container clearfix">
-		<div class="izquierda">
-			<p style="text-align">Located on the Tambopata River in the Peruvian Amazon, our exclusive G Lodge Amazon is comfortable and intimate. Enjoy excursions by expert naturalists to spot wildlife at nearby oxbow lakes and clay licks. Explore by canoe or on dry land trails, swim in the lodge’s cool stream, or strap on a harness and rope up to tree platforms for a bird’s eye view of the forest. Really experience the Amazon to the fullest by spending one night camping in the jungle—get even closer to nature!</p>
-			
-		</div>
-		<div class="derecha">
-			<div class="block-form">
-				<form action="#">
-				    <h2><span class="duration">4 days </span></h2>
-                    <h3><span class="start_finish"> Puerto Maldonado to Puerto Maldonado</span></h3>
-                                   
-                    <div class="trip-price">
-                        <div itemprop="price" class="price-block clearfix">
-                            <div class="price">
-                                <span class="from text-left">From</span>
-                                <span itemprop="price">
-                                <span class="symbol USD">$</span>
-                                <span class="price">799</span></span>
-                                <span class="currency" itemprop="priceCurrency">USD</span>
-                            </div>
-                                <span class="note">Per person for 2 travellers</span>
-                        </div>
-                        <div class="trip_code">Trip Code: TSPJ4TC</div>
-                        <div class="price-box-buttons clearfix">
-                            <div id="mobile-cta">
-                                <a href="#"><button class="btn transaction-btn  mobile-button "><i title="Calendar Icon" class="btn-icons icon-calander"></i> Book now</button></a>
-                            </div>
-                            <div id="wishlist-mobile"><button class="btn btn-morado wishlist-toggle  mobile-button" data-dossier-code="TSPJ4TC" data-original-title="" title=""><i ></i>Save to wish list</button>
-                            </div>
-                        </div>
-                    </div>
-                </form><br><br>
-            </div>
-            
-            
-        <span style="font-size:50px;    line-height: 50px;    color: rgb(75, 46, 136);">2|</span>
-        <!--<span style="ont-size: 18px;color: rgb(75, 46, 136);position:relative;bottom:-30px;">shares</span>-->
-        <amp-social-share type="facebook"data-param-app_id="254325784911610"></amp-social-share>
-        <amp-social-share type="twitter"></amp-social-share>
-        <amp-social-share type="pinterest"></amp-social-share>
-        <amp-social-share type="gplus"></amp-social-share>
-        <amp-social-share type="whatsapp"></amp-social-share>
-            
-        </div>
-    </div>
-</section>
-<!--------------------------------it is for..------------------------------------------------- -->             
-<section style="margin:20px;">
-            <div class="container clearfix">
-                <div class="izquierda">
-                    <div class="row-fluid"><div class="span12 trip-attributes-heading"><h2>Is this tour for me?</h2></div></div><div id="trip-attributes" class="row-fluid"><div id="trip-style" class="span6"><h3><span class="attribute-label">Travel Style: </span>Classic</h3><p>All of the highlights, culture, access, and I-can’t-believe-we-did-that moments, all at a great price.</p></div><div id="trip-physical" class="span6"><h3><span class="attribute-label">Physical Rating: </span>3 - Average
-                </h3><p>Some tours may include light hiking, biking, rafting, or kayaking in addition to walking.</p></div>
-                </div>
-                </div>
-                <div class="derecha" style=""  style="padding-top: 30px;">
-                    <div class="">
-                    
-                        <form action="#" style="padding:30px;">
-                            <div id="trip-service" class="span6"><h3><span class="attribute-label">Service Level: </span>Standard</h3><p>Comfortable tourist-class accommodations with character; mix of public and private transport.</p></div>
-                            <div id="trip-type" class="span6"><h3><span class="attribute-label">Trip Type: </span>Independent Travel</h3><p>Independent trips are either entire trips you take privately or solo extensions to a group tour. Local staff are available on standby 24/7.</p></div>
-                        </form>
-                    </div>
-                </div>
-            
-            </div>
-</section>
-<!--------------------------------itinerary--------------------------------------------------------------------------------- -->  
-<section>
-	<div class="container clearfix">
-		<div class="izquierda">
-			<div class="itineraries"><h2>Itinerary</h2><div class="itinerary"><div id="day-1" class="day "><h3><span class="day-number">Day 1</span><span class="location">Puerto Maldonado/Tambopata</span></h3><div class="summary"><p>Arrive at the Puerto Maldonado airport and meet the naturalist guide to journey to the jungle lodge. Spot wildlife en route. Before dinner, head out for a night walk around the lodge.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Lunch | Dinner
-            </div></div><div id="day-2" class="day "><h3><span class="day-number">Day 2</span><span class="location">Tambopata</span></h3><div class="summary"><p>Enjoy guided excursions led by expert naturalists to spot wildlife at nearby oxbow lakes and along jungle trails. Head upriver for an unforgettable camping experience.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Breakfast | Lunch | Dinner
-            </div></div><div id="day-3" class="day "><h3><span class="day-number">Day 3</span><span class="location">Tambopata</span></h3><div class="summary"><p>Rise early to get in place at the clay lick before the birds arrive. Witness the sights and sounds of the macaws and parrots feeding on the minerals and salts of the clay. Head back to the lodge after breakfast for a free afternoon. Spot caimans on the shore after dinner.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Breakfast | Lunch | Dinner
-            </div></div><div id="day-4" class="day "><h3><span class="day-number">Day 4</span><span class="location">Tambopata/Puerto Maldonado</span></h3><div class="summary"><p>After breakfast, return by canoe to Puerto Maldonado and transfer to the airport for departure.</p></div><div class="day-inclusions meals" title="Meals included"><h4>Meals included:</h4> Breakfast
-            </div></div></div></div>
-            
-            <button class="btn-morado"><a style="color:white;text-decoration:none;font-size:14px;" href="#">View full itinerary </a></button>
-		</div>
-		<div class="derecha">
-			<div class="">
-				<img src="https://media.gadventures.com/media-server/cache/29/97/299720d0df40179d4119a39ad504ca6e.png" width="100%" height="100% " alt="">
-				<h3>Places visited</h3><ul class="horizontal-list places-visited"><li>Amazon</li><li><a href="/destinations/south-america/peru/?ref=trip">Peru</a></li></ul>
-				
-			</div>
-		</div>
-	</div>
-</section>
-<!--------------------------------What's Included------------------------------------------------- -->  
-<section>
-	<div class="container clearfix">
-		<div class="izquierda">
-			<div class="span6"><h2>What's Included</h2><ul><li>Arrival and departure transfers</li><li> Exclusive G Lodge Amazon stay (2 nts)</li><li> Camping in the rainforest (1 nt)</li><li> Wildlife-spotting excursions by foot and by boat</li><li> Rubber boot use</li><li> All transport between destinations and to/from included activities</li></ul></div>
-		</div>
-		<div class="derecha">
-			<div id="accommodations"><h3><span>Accommodations</span></h3><p>G Lodge Amazon (2 nts), camping (1 nt).</p></div><div id="meals"><h3><span>Meals</span></h3><p>3 breakfasts, 3 lunches, 3 dinners
-                <br>Allow USD40-55 for meals not included.</p></div><div id="transportation"><h3><span>Transportation</span></h3><p>Car, private van, boat/canoe, walking</p></div><div id="staff-experts"><h3><span>Staff &amp; experts</span></h3><p>Expert local naturalist guides.</p></div>
-		</div>
-	</div>
-</section>
-<section>
-    <h3> <b>Departures</b> </h3><ul ><li style="display:inline-block">List</li>
-    <li style="">Monts</li></ul>
-</section>
-   
-<!---------------------------------   cuadro  departures------------------------------------------------ -->  
-<!--<section>
-    <div id="tabla">
-    <div>
-        <div>
-            <div style="box-sizing: border-box;float: left;font-weight: bold;font-size: 14px;width:35%;">Dates <br><span>Start End</span></div>
-            <div style="box-sizing: border-box;float: left;font-weight: bold;font-size: 14px;width:20%;">Availability <br><span>Remaining Spaces</span></div>
-            <div style="box-sizing: border-box;float: left;font-weight: bold;font-size: 14px;width:25%;">Price <br><span>Per Person</span></div>
-        </div>
-        <div id="mes" style="max-height: 460px;overflow: auto;clear: both;">
-            <div>
-                <div>
-                    <strong>May 2017</strong>
-                    
-                </div>
-                <ul>
-                    <div><li class="clearfix request-item"><div  style="" class="date">Sun, 21 May - Wed, 24 May</div><div  style="    box-sizing: border-box;
-    display: table-cell;
-    float: left;
-    font-weight: bold;
-    min-height: 40px;
-    line-height: 40px;
-    vertical-align: middle;
-    padding: 0 .5em;
-}"class="avail">
-                            7+
-                        <span class="micro">&nbsp;Request</span></div><div class="price">$799</div><div class="action"><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/pricing/#date/2017-05-21" class="btn btn-small site-btn pull-right">Request</a></div></li></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div></ul>
-            </div>
-        </div>
-    </div>
-</div>
-</section>-->
-<!--------------------------------seccion imagenes--------------------------------------------------------------------------------- --> 
-
-<section>
-	<div class="container clearfix">
-		<div class="izquierda">
-		    <div class="span6 blog-item ">
-                <article>
-                   <a href="#"><img src="https://media.gadventures.com/media-server/cache/75/7a/757aabe6389f903df32134326fd890b3.jpg" alt=""></a>
-                    <header>
-                        <h4><a href="#">5 fascinating facts about the Amazon's most amazing animals</a></h4>
-                    </header><p class="leadin">Interesting trivia about some of the non-human inhabitants of the massive rainforest</p><p class="byline">Written by:
-                        <span class="author">Mariellen Ward</span>,
-                        <span class="date">3 May 2017 11:25 a.m.</span></p>
-                </article>
-            </div>
-		</div>
-		<div class="derecha">
-                    <article>
-                        <a href="#">
-                        <img src="https://media.gadventures.com/media-server/cache/06/6b/066ba736d8fb22c8c92825057dbff87b.jpg" alt=""></a>    <header>
-                           <h4><a href="#">4 of the world's most beautiful ecosystems (and why they need protecting)</a></h4>
-                            </header><p class="leadin">To celebrate Earth Day, we're taking a look at some of planet Earth's most stunning natural landscapes</p>
-                            <p class="byline">Written by:= <span class="author">Candace Rose Rardon</span>,
-                        <span class="date">20 April 2017 01:46 p.m.</span></p>
-                    </article>
-			
-		</div>
-		
-	</div>
-	
-	<a class="btn-morado">View more re lated articles</a>
-</section>
-<!--<section class="related-posts ">
-    <header><h2>Related articles</h2></header>
-        <div class="row-fluid">
-            <div class="span6 blog-item ">
-                <article>
-                   <a href="/blog/amazon-amazing-animals/"><img src="https://media.gadventures.com/media-server/cache/75/7a/757aabe6389f903df32134326fd890b3.jpg" alt=""></a>
-                    <header>
-                        <h4><a href="/blog/amazon-amazing-animals/">5 fascinating facts about the Amazon's most amazing animals</a></h4
-                    </header><p class="leadin">Interesting trivia about some of the non-human inhabitants of the massive rainforest</p><p class="byline">Written by:
-                        <span class="author">Mariellen Ward</span>,
-                        <span class="date">3 May 2017 11:25 a.m.</span></p>
-                </article>
-            </div>
-            <div class="span6 blog-item ">
-                    <article>
-                        <a href="/blog/4-worlds-most-beautiful-ecosystems-and-why-they-need-protecting/">
-                        <img src="https://media.gadventures.com/media-server/cache/06/6b/066ba736d8fb22c8c92825057dbff87b.jpg" alt=""></a>    <header>
-                           <h4><a href="/blog/4-worlds-most-beautiful-ecosystems-and-why-they-need-protecting/">4 of the world's         most beautiful ecosystems (and why they need protecting)</a></h4>
-                            </header><p class="leadin">To celebrate Earth Day, we're taking a look at some of planet Earth's most stunning natural landscapes</p>
-                            <p class="byline">Written by:= <span class="author">Candace Rose Rardon</span>,
-                        <span class="date">20 April 2017 01:46 p.m.</span></p>
-                    </article>
-            </div>
-        </div>
-        <div class="cta">
-            <a href="/blog/" class="btn site-btn">View more related articles</a>
-        </div>
-</section>-->
-<section>
-       <footer>
-       <div>
-            <div class="container">
-                <div class="row-fluid"> <hr>
-                    <div clo-6>
-                        <div>
-
-                        </div>
-                    </div>
-                <div clo-6>
-                   <h3>Follow Us:</h3>
-                    <div>
-                    <a href="http://www.pinterest.com/gadventures" target="_blank" title="pinterest" class="pinterest"></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>    
-                    </div>
-                </div>    
-                </div>
-            </div>
-       </div>
-   </footer>
-</section>
-
-
-  <!-- End Footer    -->
+<!--------------------------------Located on the Tambopata River .------------------------------------------------- -->
+      
+                  
+<script src="js/main2.js"></script>
 </body>
 </html>

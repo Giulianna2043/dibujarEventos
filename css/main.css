@@ -1,0 +1,335 @@
+body {
+  line-height: 1.75em;
+  margin: 0;
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-size: 14px;
+  color: #4c4f56;
+  background-color: white; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 14px 0;
+  font-family: "montserrat_regular",sans-serif;
+  font-weight: 300;
+  line-height: 28px;
+  color: #4c4f56;
+  text-rendering: optimizelegibility; }
+
+.ampstart-sidebar, a {
+  /*background-color:#241e1e;*/
+  color: orangered;
+  min-width: 300px;
+  width: 300px;
+  padding-left: 4%;
+  list-style: none; }
+
+li .menu-oculto {
+  padding: 15px 10px 15px 10px;
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: .025em;
+  color: white;
+  background: #47268d; }
+
+.header {
+  background: #47268d; }
+
+.ampstart-navbar-trigger {
+  line-height: 3.5rem;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  visibility: hidden; }
+
+.ampstart-nav-dropdown .ampstart-dropdown-item, .ampstart-nav-dropdown .ampstart-dropdown > section > header {
+  background-color: #1c1414;
+  color: red; }
+
+.ampstart-dropdown > section > header:after {
+  display: inline-block;
+  content: ">";
+  padding: 0 0 0 1.5rem;
+  color: red; }
+
+.flex {
+  display: flex; }
+
+.top-search-toggle .m-search {
+  position: absolute;
+  left: 76%;
+  top: 5px;
+  margin-right: 1%; }
+
+.top-search-toggle input {
+  width: 200px;
+  font-size: 14px;
+  padding: 1px 10px; }
+
+#submenu {
+  clear: both;
+  padding-left: 35px;
+  font-size: 12px;
+  letter-spacing: .05em;
+  background: rgba(125, 125, 125, 0.9); }
+
+@media (max-width: 768px) {
+  #submenu {
+    display: none; } }
+#submenu ul {
+  margin: 0 0 0 5px;
+  padding: 0;
+  list-style: none; }
+
+#submenuul li {
+  margin: 0;
+  padding: 0;
+  list-style: disc inside url("https://media.gadventures.com/media-server/static/gadventures/css/images/chevron-white.png?72706765824d");
+  margin-bottom: 1em;
+  line-height: 1em; }
+
+#submenu ul li.last, #submenu ul li.last a {
+  background: none; }
+
+#submenu a, #submenu strong {
+  display: inline-block;
+  line-height: 1.8em;
+  padding: .3em 1em .3em 1em;
+  font-weight: 200;
+  color: white;
+  background: url("https://media.gadventures.com/media-server/static/gadventures/css/images/chevron-white.png?72706765824d") no-repeat right center; }
+
+#submenu a:first-child {
+  padding-left: 0; }
+
+#breadcrumbs span {
+  display: inline-block;
+  color: white;
+  padding: .3em 1em .3em 1em; }
+
+.destinations #submenu {
+  padding-top: 0; }
+
+#topbar-nav {
+  float: right;
+  font-size: 12px;
+  padding: 0 30px 0 0;
+  text-align: right; }
+
+@media (max-width: 768px) {
+  #topbar-nav {
+    display: none; } }
+.title-block {
+  width: 50%;
+  color: white;
+  background: rgba(60, 52, 52, 0);
+  position: absolute;
+  top: 430px;
+  left: 243px;
+  vertical-align: middle; }
+
+h2 {
+  text-align: inherit; }
+
+.clearfix:after {
+  content: " ";
+  clear: both; }
+
+.izquierda h1 {
+  font-family: laton;
+  font-size: 50px; }
+
+span {
+  color: #4c4f56; }
+
+.block-form {
+  margin: 20px;
+  background: rgba(92, 81, 81, 0.08);
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center; }
+
+.block-form input, .block-form button {
+  width: 100%;
+  box-sizing: border-box; }
+
+#departure-list-container #departures-list .departures-list-headings div {
+  box-sizing: border-box;
+  float: left;
+  font-weight: bold;
+  font-size: 14px; }
+
+.btn-morado {
+  transition: background-color 500ms ease-out;
+  background-color: #47268d;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle; }
+
+a {
+  text-decoration: none; }
+
+.enlace-azul {
+  color: #039CDA; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header nav {
+  /* Flexbox */
+  display: flex;
+  align-items: center; }
+
+header nav a {
+  color: #2366e3;
+  text-decoration: none;
+  padding: 10px;
+  /* Flexbox */
+  flex-grow: 1; }
+
+.contenedor {
+  /*background:#ccc;*/
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  /* Flexbox */
+  flex-flow: row wrap; }
+
+.btn-naranja {
+  transition: background-color 500ms ease-out;
+  background-color: #f7520a;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  color: #FFF;
+  padding: 10px; }
+
+.letra-morada {
+  color: #47268d; }
+
+.byline, .author, .date {
+  color: #a7a9ac; }
+
+footer {
+  background: #333; }
+
+footer h3, .icon {
+  color: #999;
+  font-size: 24px; }
+
+#footer-link {
+  color: white;
+  font-size: 12px;
+  font-weight: 100;
+  letter-spacing: .1em; }
+
+#subfooter {
+  background: #ccc;
+  padding-bottom: 2em; }
+
+#subfooter .footer-legal a {
+  border-right: 1px dotted #999;
+  display: inline-block;
+  font-size: .85em;
+  padding: .5em;
+  color: #333; }
+
+@media screen and (max-width: 800px) {
+  .contenedor {
+    flex-direction: column; }
+
+  header {
+    flex-direction: column;
+    padding: 0; }
+
+  header .logo {
+    margin: 20px 0; }
+
+  header nav {
+    width: 100%; }
+
+  aside {
+    flex-direction: row;
+    flex: 0; }
+
+  aside .widget {
+    flex-grow: 1; } }
+@media (max-width: 425px) and (min-width: 320px) {
+  .mover {
+    position: relative;
+    rigth: 30%; } }
+@media screen and (max-width: 768px) {
+  .derecha .redes-sociales {
+    padding-left: 13;
+    font-size: 25px;
+    position: absolute;
+    right: 50%;
+    top: 4.5%; }
+
+  #footer-link {
+    display: none; }
+
+  #titulos-footer h3 {
+    background: #8c8c8c;
+    cursor: pointer;
+    opacity: .8;
+    font-weight: 200;
+    color: white;
+    padding: .5em;
+    text-align: center; }
+
+  .footer .info-final {
+    text-align: center; }
+
+  footer {
+    justify-content: space-around; }
+
+  #subfooter .footer-legal a {
+    box-sizing: border-box;
+    display: table-cell;
+    font-size: 1em;
+    line-height: 1.4em;
+    text-align: center;
+    vertical-align: top;
+    width: 25%; } }
+/*********************************************************************/
+@media (max-width: 425px) and (min-width: 320px) {
+  .ampstart-navbar-trigger {
+    visibility: visible;
+    padding: 1% 10%; }
+
+  .menu-oculto {
+    display: none; }
+
+  .top-search-toggle .m-search {
+    display: none; } }
+@media (max-width: 768px) and (min-width: 425px) {
+  .ampstart-navbar-trigger {
+    visibility: visible;
+    padding: 2% 13%; }
+
+  .menu-oculto {
+    display: none; }
+
+  .top-search-toggle .m-search {
+    visibility: hidden; } }
+@media (max-width: 1440px) and (min-width: 1220px) {
+  .header {
+    height: 58px; }
+
+  .menu-oculto {
+    padding-left: 10%; } }
+@media screen and (max-width: 800px) {
+  /*header {
+  	flex-direction:column;
+  	padding:0;
+  }*/ }
+@media screen and (max-width: 600px) {
+  footer {
+    justify-content: space-around; } }
+
+/*# sourceMappingURL=main.css.map */
