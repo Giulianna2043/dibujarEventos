@@ -1,28 +1,14 @@
-.ampstart-sidebar {
-   background-color: #fff;
-   color: #000;
-    min-width: 300px;
-   width: 300px;
+#global {
+	height: 300px;
+	width: 20%;
+	border: 1px solid #ddd;
+	background: #f1f1f1;
+	overflow: scroll;
 }
-.flex{
-    display: flex;
+#mensajes {
+	height: auto;
 }
-@media (max-width: 64rem) and (min-width: 52.06rem){
-   .md-hide {
-    display: none;
-} 
-}
-
-@media (max-width: 64rem) and (min-width: 52.06rem){
-  .md-hide {
-    display: none;
-}  
-}
-
-.pr2 {
-    padding-right: 1rem;
-}
-.ampstart-nav-item a{
-    list-style: none;
-    color: red;
+.texto {
+	padding:4px;
+	background:#fff;
 }

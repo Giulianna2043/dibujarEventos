@@ -24,206 +24,77 @@
     
     
     <title>Document</title>
-    <link rel="stylesheet" href="icomoon/style.css">
-    <link rel="stylesheet" href="css/main1.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main4.css">
+
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <link rel="canonical" href="https://ampbyexample.com/components/amp-social-share/">
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 </head>
 <body>
-  
-  
-  
-    <!-- Start Navbar -->
-  <header class=" header">
-
+    <section>
         <div>
+            <h2>Departures</h2>
+            <ul>
+                <li><a href="#departures-list" class="dep-tab active" id="show-departures-list" activity="Overview,DeparturesView,List">List</a></li>
+                <li><a href="#departures-list" class="dep-tab active" id="show-departures-list" activity="Overview,DeparturesView,List">List</a></li>
+            </ul>
             <div>
-                <ul class="lista flex" >
-                    <li role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger  pr2">☰</li>
-                    <li style="padding-top: 1%;"><a class="menu-oculto" style="list-style:none;"href="#">Travel Styles</a></li>
-                    <li role="button"  tabindex="0" class="ampstart-navbar-trigger  pr2">☰</li>
-                    <li style="padding-top: 1%;"><a class="menu-oculto" href="#" style="list-style:none;">Destinations</a></li>
-                    <li role="button" tabindex="0" class="ampstart-navbar-trigger  pr2"><span  style="padding:1%;color:white;font-size:26px;"class="icon icon-search"></span></li>
-                    <li style="padding-top: 1%;" on="tap:header-sidebar.toggle"><a class="menu-oculto" href="#">Travel Deals</a></li>
-                         <div role="search" class="top-search"  on="tap:header-sidebar.toggle">
-                              <div class="top-search-toggle">
-                                <form method='get' action="/search/" class='m-search'>
-                                  <input aria-label="Where to next?" title="Site-wide search" type="text" name="q" placeholder="Where to next adventure ?" />
-                                  <input type="hidden" name="ref" value="mobsearch"/>
-                                  <button style="background:#8ab93f;" ><span  style="padding:1%;color:white;font-size:14px;"class="icon icon-search"></span></button>
-                                </form>
-                              </div>
+                <div><div>
+                    <div>
+                        <div>Datesv <span>Start-End</span></div>
                     </div>
-                </ul>
+                                        <div>
+                        <div>Datesv <span>Start-End</span></div>
+                    </div>
+                                        <div>
+                        <div>Datesv <span>Start-End</span></div>
+                    </div>
+                    <div>
+                        <div class="month">
+                           <div class="month-heading">
+                               <strong>May 2017</strong>
+                            </div>
+                            <ul >
+                                <div  >
+                                    <li style=" display:block;" class="clearfix  request-item">
+                                        <div class="date">Sat, 27 May - Tue, 30 May</div>
+                                        <div class="avail">7+<span class="micro">&nbsp;Request</span></div>
+                                        <div class="price">$799</div>
+                                        <div class="action"><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/pricing/#date/2017-05-27" class="btn btn-small site-btn pull-right">Request</a></div>    
+                                    </li>
+                                </div>
+                                <div>
+                                    <li class="clearfix request-item">
+                                        <div class="date">Sun, 28 May - Wed, 31 May</div>
+                                        <div class="avail">7+<span class="micro">&nbsp;Request</span></div>
+                                        <div class="price">$799</div>
+                                        <div class="action"><a href="/trips/g-lodge-amazon-and-camping-4-day-independent-adventure/4723/pricing/#date/2017-05-28" class="btn btn-small site-btn pull-right">Request</a></div>
+                                    </li>
+                                </div>
+                        </div>
+                    </div>
+                </div></div>
             </div>
         </div>
-  </header>
-
-<!-- Start Sidebar -->
-<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 " layout="nodisplay">
-    <div class="flex justify-start items-center ampstart-sidebar-header">
-        <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
-    </div>
-    <nav class="ampstart-sidebar-nav ampstart-nav">
-        <ul class="list-reset m0 p0 caps h5 ampstart-nav-item ampstart-nav-dropdown relative">
-            <li class="ampstart-nav-item  flex ampstart-nav-dropdown relative">
-                    <!-- Start Dropdown-inline -->
-                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
-                    <section>
-                        <header>Destinations  </header>
-                        <ul class="ampstart-dropdown-items list-reset m0 p0" style="list-style:none;">
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Africa</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Polar regions</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Asia</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Australia /New Zealand</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Central America</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Europa</a></li>
-                           <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">North America </a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">South America</a></li>
-                        </ul>
-                    </section>
-                </amp-accordion>
-                    <!-- End Dropdown-inline -->
-            </li>
-            <li class="ampstart-nav-item ampstart-nav-dropdown relative">
-                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
-                    <section>
-                        <header>Travel Styles  </header>
-                        <ul class="ampstart-dropdown-items list-reset m0 p0">
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Active</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Classic</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">National Geographic Journeys</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Family</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Local Living</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Marine</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Yolo </a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Rail</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Private Groups</a></li>
-                        </ul>
-                    </section>
-                </amp-accordion>  
-            </li>
-            <li class="ampstart-nav-item"><a  style="list-style:none;" href="#">why Travelk With G ></a></li>
-            <li class="ampstart-nav-item"><a   href="#">Newsletter ></a></li>
-            <li class="ampstart-nav-item"><a  href="#">Request aBrochure ></a></li>
-        </ul>
-    </nav>
-  
-</amp-sidebar>
-<!-- End Sidebar -->
-  <!-- End Navbar -->
-
-   <!-- <header id="header">
-       <button on="tap:sidebar.toggle"class="ampstart-btn caps m2">☰ </button>  
-                <amp-sidebar id="sidebar"layout="nodisplay" side="right">
-                <amp-img class="amp-close-image"
-                    src="/img/ic_close_black_18dp_2x.png"
-                    width="20"
-                    height="20"
-                    alt="close sidebar"
-                    on="tap:sidebar.close"
-                    role="button"
-                    tabindex="0">
-                </amp-img>
-                <ul>
-                    <li><a href="/">Travel Styles</a></li>
-                    <li> Destinations</li>
-                    <li>
-                      <amp-fit-text width="220"
-                        height="20"
-                        layout="responsive"
-                        max-font-size="24">
-                        Nav item 2 - &lt;amp-fit-text&gt;
-                      </amp-fit-text>
-                    </li>
-                    <li> Nav item 5</li>
-                    <li> Nav item 6</li>
-                </ul>
-            </amp-sidebar>
-       
-        <div id="topbar-nav">
-            <div id="account-nav" style="">
-                <a href="#">Login</a>
-                <a href="#">Register</a></div>
-                <a href="#" data-bypass="">Help</a></div>
-                    <nav class="site-nav" id="site-nav">
-                        <div id="masthead">
-                            <a href="#" class="home">G Adventures</a>
-                            <div class="phone-hours">
-                                <div class="hours">Call us, we're open 24/7</div>
-                                    <a class="telephone" href="callto:1 416 260 0999">1 416 260 0999</a>
-                            </div>
-                        </div>
-                        <div role="navigation" class="pinned-nav">
-                            <div class="primary">
-                                <ul class="nav">
-                                    <li class="nav-link"></li>
-                                    <li class="nav-link"><a title="Top of page anchor" href="/" class="g-flag"></a></li>
-                                    <li class="nav-link "><a href="/travel-styles/">Travel Styles</a></li>
-                                    <li class="nav-link "><a href="/destinations/">Destinations</a></li>
-                                    <li class="nav-link "><a href="/travel-deals/">Travel Deals</a></li>
-                                    <li><div id="js-profile-bookings" class="nav-cart" style="display:none;">
-                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                            <span data-label="num-bookings" class="num-bookings"></span></a>
-                                                    <div id="" class="dropdown-menu">
-                                                        <h4 class="dropdown-menu-title">Resume Booking</h4>
-                                                        <ul id="js-bookings-dropdown"></ul>
-                                                    </div>
-                                        </div>
-                                        
-                                    </li>
-                                </ul>
-                                <div class="bar">
-                                    <form role="search" method="get" action="/search/" class="hypersearchform" autocomplete="off">
-                                        <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
-                                        <input title="Site-wide search" type="text" maxlength="128" name="q" class="hypersearch ui-autocomplete-input" ceid="Navigation Search" placeholder="Where's your next adventure?" data-source="/search/site/autocomplete/" tabindex="1" autocomplete="off">
-                                        <input type="hidden" name="ref" value="navsearch">
-                                        <button title="Site search button" type="submit" class="btn "><span class="icon-search icon-white"></span></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div role="navigation" class="secondary-nav"></div>
-                        </div>
-                        <div role="navigation" class="mobile-nav">
-                            <a aria-label="Open mobile navigation" title="Open mobile navigation" href="#" id="left-drawer-open" class="pull-left toggler mobile-icon"><span class="menu-icon"></span></a>
-                            <a aria-label="Home page link" title="Home page" href="/" class="mobile-icon"><span class="g-logo-mini"></span></a>
-                            <a aria-label="Open mobile search" title="Open mobile search" href="#" id="top-drawer-open" class="pull-right toggler mobile-icon"><span class="search-icon"></span></a>
-                            <a aria-label="Open mobile filter" title="Open mobile filter" href="#" id="right-drawer-open" class="pull-right toggler mobile-icon"><span class="filter-icon"></span></a>
-                        </div>
-                    </nav>
-
-                <div id="aff"></div>
-    </header>-->
-    
-<!--------------------------------Located on the Tambopata River .------------------------------------------------- --> 
-        <!--<div id="c-inner">
-    <div id="submenu">
-        <div class="breadcrumbs">
-            <a href="/">Home</a>
-            <a href="/search/">Adventure Tours</a>
-            <a href="/search/south-america/">South America</a>
-            <a href="/search/peru/">Peru</a>
-            <span>G Lodge Amazon &amp; Camping - 4 Day Independent Adventure</span>
+    </section>
+        <div id="global">
+            <div id="mensajes">
+                <div class="texto">Mensaje 1</div>
+                <div class="texto">Mensaje 2</div>
+                <div class="texto">Mensaje 3</div>
+                <div class="texto">Mensaje 4</div>
+                <div class="texto">Mensaje 5</div>
+                <div class="texto">Mensaje 6</div>
+                <div class="texto">Mensaje 7</div>
+                <div class="texto">Mensaje 8</div>
+                <div class="texto">Mensaje 9</div>
+                <div class="texto">Mensaje 10</div>
+                <div class="texto">Mensaje 11</div>
+                <div class="texto">Mensaje 12</div>
+                <div class="texto">Mensaje 13</div>
+                <div class="texto">Mensaje 14</div>
+                <div class="texto">Mensaje 15</div>
+            </div>
         </div>
-    </div>
-    <div itemscope="" itemtype="http://schema.org/Product" id="t">
-        <div id="header-media">
-                <div class="title-block"> 
-                    <h1 class="text-center">G Lodge Amazon &amp; Camping - 4 Day Independent Adventure</h1>
-                    <h2 class="visible-desktop text-center">4 days, Puerto Maldonado to Puerto Maldonado</h2>
-                </div>
-                    <img width="100%" src="https://media.gadventures.com/media-server/cache/45/90/45901646afd0e9833ad45e2c0928fb3f.jpg" class="img-responsive page-head" alt="The Amazon in Peru is home to many species of Macaws">
-                    <span class="icon"></span>
-                    <span class="icon"></span>
-        </div>
-    </div>
-</div>-->
-               
-<!--------------------------------Located on the Tambopata River .------------------------------------------------- -->
-      
-                  
-<script src="js/main2.js"></script>
 </body>
 </html>

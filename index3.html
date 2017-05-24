@@ -30,11 +30,12 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
     <link rel="stylesheet" href="../flex.css">
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
     <link rel="canonical" href="https://ampbyexample.com/components/amp-social-share/">
     <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
   </head>
   <body>
-<!-- ------------------------------------------------------------- HEADER -->
+<!-- ------------------------------------------------------------- HEADER ---------------------------------------------->
   
   
   
@@ -65,56 +66,56 @@
   </header>
 
 <!-- Start Sidebar -->
-<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 " layout="nodisplay">
-    <div class="flex justify-start items-center ampstart-sidebar-header">
-        <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
-    </div>
-    <nav class="ampstart-sidebar-nav ampstart-nav">
-        <ul class="list-reset m0 p0 caps h5 ampstart-nav-item ampstart-nav-dropdown relative">
-            <li class="ampstart-nav-item  flex ampstart-nav-dropdown relative">
-                    <!-- Start Dropdown-inline -->
-                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
-                    <section>
-                        <header>Destinations  </header>
-                        <ul class="ampstart-dropdown-items list-reset m0 p0" style="list-style:none;">
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Africa</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Polar regions</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Asia</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Australia /New Zealand</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Central America</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Europa</a></li>
-                           <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">North America </a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">South America</a></li>
-                        </ul>
-                    </section>
-                </amp-accordion>
-                    <!-- End Dropdown-inline -->
-            </li>
-            <li class="ampstart-nav-item ampstart-nav-dropdown relative">
-                <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
-                    <section>
-                        <header>Travel Styles  </header>
-                        <ul class="ampstart-dropdown-items list-reset m0 p0">
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Active</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Classic</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">National Geographic Journeys</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Family</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Local Living</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Marine</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Yolo </a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Rail</a></li>
-                            <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Private Groups</a></li>
-                        </ul>
-                    </section>
-                </amp-accordion>  
-            </li>
-            <li class="ampstart-nav-item"><a  style="list-style:none;" href="#">why Travelk With G ></a></li>
-            <li class="ampstart-nav-item"><a   href="#">Newsletter ></a></li>
-            <li class="ampstart-nav-item"><a  href="#">Request aBrochure ></a></li>
-        </ul>
-    </nav>
+    <amp-sidebar id="header-sidebar" class="ampstart-sidebar px3 " layout="nodisplay">
+        <div class="flex justify-start items-center ampstart-sidebar-header">
+            <div role="button" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+        </div>
+        <nav class="ampstart-sidebar-nav ampstart-nav">
+            <ul class="list-reset m0 p0 caps h5 ampstart-nav-item ampstart-nav-dropdown relative">
+                <li class="ampstart-nav-item  flex ampstart-nav-dropdown relative">
+                        <!-- Start Dropdown-inline -->
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>Destinations  </header>
+                            <ul class="ampstart-dropdown-items list-reset m0 p0" style="list-style:none;">
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Africa</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Polar regions</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Asia</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Australia /New Zealand</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Central America</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Europa</a></li>
+                               <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">North America </a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">South America</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>
+                        <!-- End Dropdown-inline -->
+                </li>
+                <li class="ampstart-nav-item ampstart-nav-dropdown relative">
+                    <amp-accordion layout="container" disable-session-states="" class="ampstart-dropdown">
+                        <section>
+                            <header>Travel Styles  </header>
+                            <ul class="ampstart-dropdown-items list-reset m0 p0">
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Active</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Classic</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">National Geographic Journeys</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Family</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Local Living</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Marine</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Yolo </a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Rail</a></li>
+                                <li class="ampstart-dropdown-item"><a href="#" class="text-decoration-none">Private Groups</a></li>
+                            </ul>
+                        </section>
+                    </amp-accordion>  
+                </li>
+                <li class="ampstart-nav-item"><a  style="list-style:none;" href="#">why Travelk With G ></a></li>
+                <li class="ampstart-nav-item"><a   href="#">Newsletter ></a></li>
+                <li class="ampstart-nav-item"><a  href="#">Request aBrochure ></a></li>
+            </ul>
+        </nav>
   
-</amp-sidebar>
+    </amp-sidebar>
 <!--------------------------------Located on the Tambopata River .------------------------------------------------- --> 
 <div id="c-inner">
     <div id="submenu">
@@ -136,7 +137,7 @@
         </div>
     </div>
 </div> 
-<!-- --------------------------------------------------hero container -->
+<!-- --------------------------------------------------hero container ------------------------------------------------>
 <section >
     <div class="contenedor">
 		<header>
@@ -146,7 +147,7 @@
 				<a class="enlace-azul" href="#">Tours detaills</a>
 			</nav>
 		</header>
-<!-- --------------------------------------------------hero container -->
+<!-- --------------------------------------------------hero container ---------------------------------------->
         <section class=" mover" style="padding: 4%">
             <div class="row">
                 <div class="col-xs-12 col-sm-8  col-md-8 col-lg-8" >
@@ -212,7 +213,7 @@
                 </div>
             </div>
         </section>
-        <!-- --------------------------------------------------hero container -->
+        <!-- --------------------------------------------------hero container ---------------------------------------->
         <section>
            <div class="row" style="padding:30px;" >
                 <div class="col-xs-12 col-sm-12  col-md-8 col-lg-8">
@@ -272,7 +273,7 @@
            </div>
 
         </section>
-        <!-- --------------------------------------------------hero container -->
+        <!-- --------------------------------------------------hero container ---------------------------------------->
         <section>
             <div  style="margin-left:20px;">
                 <div class="row" >
@@ -308,7 +309,7 @@
                 </div>
             </div>
         </section>
-        <!-- --------------------------------------------------hero container -->
+        <!-- --------------------------------------------------hero container ---------------------------------------->
         <section style="padding:5%;">
             <header style="text-align:center;padding:2%;" >
                 <h2 > <b>Related Articles</b> </h2>
@@ -347,14 +348,14 @@
                 <a class="btn-morado"  href="">View more related articles</a>
             </div>
         </section>
-        <!-- --------------------------------------------------hero container -->
+        <!-- --------------------------------------------------hero container ---------------------------------------->
 	</div>
 </section>       	    
-<!-- --------------------------------------------------section container -->	
+<!-- --------------------------------------------------section container ---------------------------------------->	
 <section class="container">
 
 </section>
-<!-- ------------------------------------------------------------- FOOTER -->
+<!-- ------------------------------------------------------------- FOOTER ---------------------------------------->
 <footer>
 	    <div class="footer">
 	        <div class="contenedor" style="text-align:center;">
@@ -437,7 +438,7 @@
 	        <div id="subfooter">
 	            <div class="contenedor">
 	                <div class="row">
-	                    <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6">
+	                    <div class="col-xs-12 col-sm-6  col-md-6 col-lg-6">
 	                        <div class="footer-legal">
 	                            <a  href="/terms-conditions/privacy/">Privacy Policy</a>
 	                            <a href="https://developers.gadventures.com/">Developers API</a>
@@ -455,7 +456,7 @@
 	    
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="js/main2.js"></script>
+  
     <script src="jquery.js" ></script>
   </body>
 </html>
