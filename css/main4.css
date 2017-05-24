@@ -1,14 +1,106 @@
-#global {
-	height: 300px;
-	width: 20%;
-	border: 1px solid #ddd;
-	background: #f1f1f1;
-	overflow: scroll;
+*{outline:1px solid pink;}
+
+
+
+
+.container{
+   width: 770px;
+    padding: 10px;
+
+
 }
-#mensajes {
-	height: auto;
+
+#departures-subnav a {
+    display: inline-block;
+    font-weight: normal;
 }
-.texto {
-	padding:4px;
-	background:#fff;
+
+
+
+
+.nav li a{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    list-style: none;
+    line-height: 1em;
+    
+}#departures-list ul li {
+    border-bottom: 1px solid #eee;
+    clear: both;
+    list-style: none;
+    margin-bottom: 0;}
+#departures-list .action {
+    width: 19%;
+    padding: 0 .7em;
+}
+
+#departures-list ul li div {
+    box-sizing: border-box;
+    display: table-cell;
+    float: left;
+    font-weight: bold;
+    min-height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    padding: 0 .5em;
+}
+
+.avail .micro {
+    display: block;
+    line-height: 20px;
+}
+#departures-list .date .micro {
+    display: block;
+    line-height: 20px;
+}
+#departures-list .micro{
+    color: #7c818c;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: -3px;
+}
+.departures-list-headings {
+    box-sizing: border-box;
+    background: #EEE;
+    display: block;
+    float: left;
+    padding: .5em 0;
+    width: 100%;
+}
+ .departures-list-headings div {
+    box-sizing: border-box;
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+.months .month-actuales {
+    box-sizing: border-box;
+    background-color: #C7C7C7;
+    clear: both;
+    display: block;
+    float: left;
+    padding: .5em;
+    text-transform: uppercase;
+    width: 100%;
+
+}
+
+
+
+/*******************************@media **************************************/
+@media (max-width: 425px)  and (min-width: 320px) {
+    .departures-list-headings  {
+        display: none;
+    }
+    .months  {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px)  and (min-width: 425px) {
+    
+        
+    }
 }

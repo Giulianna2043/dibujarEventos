@@ -1,5 +1,13 @@
 $(document).ready(function(){
-    $(".button").click(function(){
-        $("ul").toggle();
-    });
+	$("#ocultar-cuadros").on("click",function(){
+
+        $("#mostrar-cuadros").show();
+        $("#mostrar").hide();
+	});
+    $("#ocultar").on("click",function(){
+
+        $("#mostrar").show();
+        $("#mostrar-cuadros").hide();
+	});
 });
+
