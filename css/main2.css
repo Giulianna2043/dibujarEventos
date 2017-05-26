@@ -1,0 +1,117 @@
+.contenedor {
+  /*background:#ccc;*/
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 10px;
+  /* Flexbox */
+  flex-flow: row wrap; }
+#container{
+    width: 770px;
+}
+.contenedor .nav{
+    display: flex;
+    list-style: none;
+   
+}
+#mostrar-cuadros{
+    width:550px;
+}
+#mostrar-cuadros .cuadro{
+    width: 64px;
+    height: 66px;
+    text-align: center;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 1px solid green;
+    float:left; 
+}
+#mostrar-cuadros .cuadro a{
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 1em;
+}
+.nav #ocultar ,.nav #ocultar-cuadros{
+    padding: 5px;
+    text-decoration: none;
+    
+}
+
+.month-actuales{
+    background: rgba(0, 0, 0, 0.26);
+    padding: 1%;
+}
+.list-headings {
+    background: rgba(131, 127, 134, 0.18);
+    display:inline-block;
+    
+}
+.months {
+   overflow-y: scroll;
+    max-height: 460px;
+    padding: 0px;
+    margin: 0x;
+}
+.list-headings .date,.list-headings .avail , .list-headings .pricing{
+    padding-left: 9%;
+}
+.lista{
+    padding: 0px;
+    margin: 0px;
+}
+.porfa .request-item {
+    display: inline-flex;
+    
+    
+}
+.porfa  {
+    display: inline-flex;
+    border-bottom: 1px solid #363633;
+    padding: 2%;
+    
+}
+.request-item .date ,.request-item .avail ,.request-item .price,.request-item .action{
+    
+   padding-left:12%;
+}
+
+/*******************************@media **************************************/
+@media (max-width: 425px) and (min-width: 320px) {
+ .request-item .date ,.request-item .avail ,.request-item .price,.request-item .action{
+    
+  padding-left: 0px; 
+     font-size: 14px;
+} 
+    .list-headings .date,.list-headings .avail , .list-headings .pricing{
+    padding-left: 2%; 
+     font-size: 14px;
+}
+    .container
+    {width: 100%;}
+    #mostrar-cuadros  {
+        width: 250px;
+        padding-left: 50px;
+    }
+    #mostrar{
+        width: 250px;
+    }
+}
+@media (max-width: 768px) and (min-width: 425px) {
+    .container{
+        width: 100%
+    }
+    .request-item .date ,.request-item .avail ,.request-item .price,.request-item .action{
+    
+   
+}
+
+
+}
+
+
+
+
+
+
+
+

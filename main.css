@@ -172,6 +172,11 @@ a {
 .enlace-azul {
   color: #039CDA; }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 header nav {
   /* Flexbox */
   display: flex;
@@ -265,7 +270,7 @@ footer h3, .icon {
     top: 4.5%; }
 
   #footer-link {
-    overflow: hidden; }
+    display: none; }
 
   #titulos-footer h3 {
     background: #8c8c8c;
@@ -300,10 +305,7 @@ footer h3, .icon {
     display: none; }
 
   .top-search-toggle .m-search {
-    display: none; }
-
-  .ampstart-sidebar, a imag {
-    width: 250px; } }
+    display: none; } }
 @media (max-width: 768px) and (min-width: 425px) {
   .ampstart-navbar-trigger {
     visibility: visible;
