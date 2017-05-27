@@ -24,11 +24,11 @@
     
     
     
-    <link rel="stylesheet" href="css/main2.css">
+<link rel="stylesheet" href="css/main2.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="icomoon/style.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
-    <link rel="stylesheet" href="../flex.css">
+    
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
     <script custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js" async></script>
     <link rel="canonical" href="https://ampbyexample.com/components/amp-social-share/">
@@ -147,7 +147,7 @@
 				<a class="enlace-azul" href="#">Tours detaills</a>
 			</nav>
 		</header>
-<!-- --------------------------------------------------hero container ---------------------------------------->
+<!----------------------------------------------------hero container ---------------------------------------->
         <section class=" mover" style="padding: 4%">
             <div class="row">
                 <div class="col-xs-12 col-sm-8  col-md-8 col-lg-8" >
@@ -606,13 +606,14 @@
             </div>
         </section>
         <!-- --------------------------------------------------hero container ---------------------------------------->
-
+        
 	</div>
 </section>       	    
 
 
 <!-- ------------------------------------------------------------- FOOTER ---------------------------------------->
-<footer>
+<section  class="footerback" >
+    <footer class="">
 	    <div class="footer">
 	        <div class="contenedor" style="text-align:center;">
 	            <div class="row" style="padding:2%;">
@@ -620,7 +621,7 @@
                         <a href="/">G Adventures</a>
                     </div>
                     <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6">
-                        <h3>Follow Us:</h3>
+                        <h3 >Follow Us:</h3>
                         <a href=""><i class="icon icon-facebook"></i></a>
                         <a href=""><i class="icon icon-twitter"></i></a>
                         <a href=""><i class="icon icon-google-plus"></i></a>
@@ -631,10 +632,10 @@
                     </div>
                     </div>
 	            </div> 
-	            <div class="row" style="padding-top:2%;">
+	            <div class="row" style="padding-top:2%;    margin: 10%;">
                     <div  id="titulos-footer" class="col-xs-12 col-sm-12  col-md-2 col-lg-2" style="">
-                        <h3 id="general">General</h3>
-                        <ul style="list-style:none;" id="respuesta-ej1" >
+                        <h3 class="button" >General</h3>
+                        <ul  class="panel"  style=";"  >
                             <li> <a  id="footer-link" href="#">Home</a></li>
                             <li> <a  id="footer-link" href="#">Request a Brochure</a></li>
                             <li> <a  id="footer-link" href="#">Email Sign Up</a></li>
@@ -644,8 +645,8 @@
                         </ul>
                     </div>
                     <div  id="titulos-footer" class="col-xs-12 col-sm-12  col-md-2 col-lg-2" style="">
-                        <h3><b>About Us</b></h3>
-                        <ul style="list-style:none; color:white;">
+                        <h3 class="button"><b>About Us</b></h3>
+                        <ul  class="panel"  style="; color:white;">
                             <li> <a id="footer-link" href="#">Our History</a></li>
                             <li> <a id="footer-link"  href="#">Our Core Values</a></li>
                             <li> <a  id="footer-link" href="#">Gareers with G</a></li>
@@ -655,8 +656,8 @@
                         </ul>
                     </div>
                     <div  id="titulos-footer" class="col-xs-12 col-sm-12  col-md-2 col-lg-2" style="">
-                        <h3>Resourses</h3>
-                        <ul style="list-style:none;">
+                        <h3 class="button">Resourses</h3>
+                        <ul  class="panel"  style=";">
                             <li> <a id="footer-link"  href="#">FAQ</a></li>
                             <li> <a id="footer-link"  href="#">Travel Resources</a></li>
                             <li> <a id="footer-link"  href="#">Visi the Gear Shop</a></li>
@@ -666,18 +667,15 @@
                     </div>
                     <div  id="titulos-footer" class="col-xs-12 col-sm-12  col-md-2 col-lg-2" style="">
                         <h3 class="button">Comunity</h3>
-                        <div  class="nav-collapse collapse" id="footer-community">
-                            <ul style="list-style:none;">
+                            <ul class="panel">
                                 <li> <a id="footer-link"  href="#">Watering  Hole Forum</a></li>
                                 <li> <a id="footer-link"  href="#">Wanderers in Residence</a></li>
                                 <li> <a id="footer-link"  href="#">G Adventure Blog</a></li>
                             </ul> 
-                        </div>
-
                     </div>
                     <div id="titulos-footer" class="col-xs-12 col-sm-12  col-md-2 col-lg-2">
-                        <h3>Travel Agents</h3>
-                        <div class="cuadro-verde">
+                        <h3 class="button">Travel Agents</h3>
+                        <div class="panel"><!-- class="panel"   ver esto-->
                             <div style="background:rgba(153,153,153,0.3);padding:5%;color:white;text-align: justify;line-height: 18px">
                             <p id="footer-link" >As an agent of change, you have the power to changecthe world. </p> 
                             <a  id="footer-link" style="background:#8ab93f;padding:2%;color:white;" href="">Agent Login</a>  
@@ -686,11 +684,12 @@
                         </div>
                     </div>
 	            </div>
-	            <div class="row info-final"  style="text-align:center;padding:5%;">
-	                <p>Call us we're open 24/7</p>
+	            <div class="row info-final"  style="">
+	                <p>Call us we're open 24/7</p> <br>
 	                <a  href="">12564564</a>
 	            </div>
 	        </div>
+     </footer>
 	        <div id="subfooter">
 	            <div class="contenedor">
 	                <div class="row">
@@ -709,11 +708,13 @@
 	                </div>
 	            </div>
 	        </div>
-	    
-    </footer>
+	   
+</section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  
+    <script src="js/main1.js"></script>
     <script src="js/jquery.js" ></script>
+    
   </body>
 </html>
 

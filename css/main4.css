@@ -1,106 +1,83 @@
-*{outline:1px solid pink;}
+/*{outline:1px solid pink;}*/
 
 
-
-
-.container{
-   width: 770px;
+.contenedor {
+	/*background:#ccc;*/
+	width:100%;
+	max-width:1000px;
+	margin:auto;
     padding: 10px;
 
-
-}
-
-#departures-subnav a {
-    display: inline-block;
-    font-weight: normal;
-}
-
-
-
-
-.nav li a{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    vertical-align: top;
-    list-style: none;
-    line-height: 1em;
+	/* Flexbox */
     
-}#departures-list ul li {
-    border-bottom: 1px solid #eee;
-    clear: both;
+	flex-flow:row wrap;
+}
+
+.footerback{
+    //background: #ccc;
+     background: #333;
+}
+.button{
+    text-align: center;
+    color: #999;
+}
+footer  .panel {
+    overflow: visible;
     list-style: none;
-    margin-bottom: 0;}
-#departures-list .action {
-    width: 19%;
-    padding: 0 .7em;
+    
 }
 
-#departures-list ul li div {
-    box-sizing: border-box;
-    display: table-cell;
-    float: left;
-    font-weight: bold;
-    min-height: 40px;
-    line-height: 40px;
-    vertical-align: middle;
-    padding: 0 .5em;
-}
-
-.avail .micro {
-    display: block;
-    line-height: 20px;
-}
-#departures-list .date .micro {
-    display: block;
-    line-height: 20px;
-}
-#departures-list .micro{
-    color: #7c818c;
+footer  .panel #footer-link{
+    color: white;
+    text-decoration: none;
     font-size: 12px;
-    font-weight: 400;
-    margin-top: -3px;
-}
-.departures-list-headings {
-    box-sizing: border-box;
-    background: #EEE;
-    display: block;
-    float: left;
-    padding: .5em 0;
-    width: 100%;
-}
- .departures-list-headings div {
-    box-sizing: border-box;
-    float: left;
-    font-weight: bold;
-    font-size: 14px;
-}
-.months .month-actuales {
-    box-sizing: border-box;
-    background-color: #C7C7C7;
-    clear: both;
-    display: block;
-    float: left;
-    padding: .5em;
-    text-transform: uppercase;
-    width: 100%;
-
-}
-
-
-
-/*******************************@media **************************************/
-@media (max-width: 425px)  and (min-width: 320px) {
-    .departures-list-headings  {
-        display: none;
-    }
-    .months  {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px)  and (min-width: 425px) {
+    font-weight: 100;
+    letter-spacing: .1em;
+    padding-bottom: 4px;
+    padding-top:4px;
     
+}
+.footer .info-final p ,.footer .info-final a{
+    
+    clear: both;
+    text-align: center;
+}
+ #subfooter {
+    background: #ccc;
+}
+.contenedor #subfooter  .footer-legal {
+    
+}
+/*******************************@media **************************************/
+@media (max-width: 769px)  and (min-width: 320px) {
+        footer  .panel {
+       /*overflow: hidden; */
+        display: none;
+        height:auto;
+        text-align: center;
+        list-style: none;
+            
+        padding: 4px;
         
     }
+    footer  .button  {
+       background:  #8c8c8c;
+        padding: .5em;
+        font-size: 18px;
+        margin: .5em 0 .2em 0;
+        color: white;
+    }
+    footer  .panel #footer-link {  
+        clear: both;
+        font-size: 16px;
+        padding: 4px;
+        text-decoration: none;
+        font-weight: 10;
+        letter-spacing: .1em;
+    }
+    
+    
+    
 }
+
+
